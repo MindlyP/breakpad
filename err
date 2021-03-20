@@ -1,0 +1,220 @@
+src/third_party/libdisasm/x86_format.c: In function ‘format_expr’:
+src/third_party/libdisasm/x86_format.c:198:40: warning: ‘%s’ directive output may be truncated writing up to 31 bytes into a region of size 26 [-Wformat-truncation=]
+  198 |                         STRNCATF (buf, "type=\"%s\" ", str, len);
+      |                                        ^~~~~~~~~~~~~~  ~~~
+src/third_party/libdisasm/x86_format.c:34:38: note: in definition of macro ‘STRNCATF’
+   34 |         snprintf( _tmp, sizeof _tmp, fmt, data );   \
+      |                                      ^~~
+src/third_party/libdisasm/x86_format.c:198:48: note: format string is defined here
+  198 |                         STRNCATF (buf, "type=\"%s\" ", str, len);
+      |                                                ^~
+src/third_party/libdisasm/x86_format.c:34:9: note: ‘snprintf’ output between 9 and 40 bytes into a destination of size 32
+   34 |         snprintf( _tmp, sizeof _tmp, fmt, data );   \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/third_party/libdisasm/x86_format.c:198:25: note: in expansion of macro ‘STRNCATF’
+  198 |                         STRNCATF (buf, "type=\"%s\" ", str, len);
+      |                         ^~~~~~~~
+src/third_party/libdisasm/x86_format.c:212:40: warning: ‘%s’ directive output may be truncated writing up to 31 bytes into a region of size 26 [-Wformat-truncation=]
+  212 |                         STRNCATF (buf, "type=\"%s\" ", str, len);
+      |                                        ^~~~~~~~~~~~~~  ~~~
+src/third_party/libdisasm/x86_format.c:34:38: note: in definition of macro ‘STRNCATF’
+   34 |         snprintf( _tmp, sizeof _tmp, fmt, data );   \
+      |                                      ^~~
+src/third_party/libdisasm/x86_format.c:212:48: note: format string is defined here
+  212 |                         STRNCATF (buf, "type=\"%s\" ", str, len);
+      |                                                ^~
+src/third_party/libdisasm/x86_format.c:34:9: note: ‘snprintf’ output between 9 and 40 bytes into a destination of size 32
+   34 |         snprintf( _tmp, sizeof _tmp, fmt, data );   \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/third_party/libdisasm/x86_format.c:212:25: note: in expansion of macro ‘STRNCATF’
+  212 |                         STRNCATF (buf, "type=\"%s\" ", str, len);
+      |                         ^~~~~~~~
+src/third_party/libdisasm/x86_format.c: In function ‘format_operand_att’:
+src/third_party/libdisasm/x86_format.c:659:40: warning: ‘snprintf’ output may be truncated before the last format character [-Wformat-truncation=]
+  659 |                         STRNCATF( buf, "$%s", str, len );
+      |                                        ^~~~~
+src/third_party/libdisasm/x86_format.c:34:38: note: in definition of macro ‘STRNCATF’
+   34 |         snprintf( _tmp, sizeof _tmp, fmt, data );   \
+      |                                      ^~~
+src/third_party/libdisasm/x86_format.c:659:44: note: format string is defined here
+  659 |                         STRNCATF( buf, "$%s", str, len );
+      |                                            ^
+src/third_party/libdisasm/x86_format.c:34:9: note: ‘snprintf’ output between 2 and 33 bytes into a destination of size 32
+   34 |         snprintf( _tmp, sizeof _tmp, fmt, data );   \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/third_party/libdisasm/x86_format.c:659:25: note: in expansion of macro ‘STRNCATF’
+  659 |                         STRNCATF( buf, "$%s", str, len );
+      |                         ^~~~~~~~
+src/third_party/libdisasm/x86_format.c: In function ‘format_operand_xml’:
+src/third_party/libdisasm/x86_format.c:837:5: warning: ‘%04X’ directive output truncated writing 4 bytes into a region of size 1 [-Wformat-truncation=]
+  837 |     "\t\t<absolute_address segment=\"0x%04" PRIX16 "\"",
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/third_party/libdisasm/x86_format.c:34:38: note: in definition of macro ‘STRNCATF’
+   34 |         snprintf( _tmp, sizeof _tmp, fmt, data );   \
+      |                                      ^~~
+src/third_party/libdisasm/x86_format.c:837:40: note: format string is defined here
+  837 |     "\t\t<absolute_address segment=\"0x%04" PRIX16 "\"",
+src/third_party/libdisasm/x86_format.c:34:9: note: ‘snprintf’ output 37 bytes into a destination of size 32
+   34 |         snprintf( _tmp, sizeof _tmp, fmt, data );   \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/third_party/libdisasm/x86_format.c:836:25: note: in expansion of macro ‘STRNCATF’
+  836 |                         STRNCATF( buf,
+      |                         ^~~~~~~~
+src/third_party/libdisasm/x86_format.c:807:40: warning: ‘%s’ directive output may be truncated writing up to 31 bytes into a region of size 25 [-Wformat-truncation=]
+  807 |                         STRNCATF( buf, "value=\"%s\"/>\n", str, len );
+      |                                        ^~~~~~~~~~~~~~~~~~  ~~~
+src/third_party/libdisasm/x86_format.c:34:38: note: in definition of macro ‘STRNCATF’
+   34 |         snprintf( _tmp, sizeof _tmp, fmt, data );   \
+      |                                      ^~~
+src/third_party/libdisasm/x86_format.c:807:49: note: format string is defined here
+  807 |                         STRNCATF( buf, "value=\"%s\"/>\n", str, len );
+      |                                                 ^~
+src/third_party/libdisasm/x86_format.c:34:9: note: ‘snprintf’ output between 12 and 43 bytes into a destination of size 32
+   34 |         snprintf( _tmp, sizeof _tmp, fmt, data );   \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/third_party/libdisasm/x86_format.c:807:25: note: in expansion of macro ‘STRNCATF’
+  807 |                         STRNCATF( buf, "value=\"%s\"/>\n", str, len );
+      |                         ^~~~~~~~
+src/third_party/libdisasm/x86_format.c:796:40: warning: ‘%s’ directive output may be truncated writing up to 31 bytes into a region of size 26 [-Wformat-truncation=]
+  796 |                         STRNCATF( buf, "type=\"%s\" ", str, len );
+      |                                        ^~~~~~~~~~~~~~  ~~~
+src/third_party/libdisasm/x86_format.c:34:38: note: in definition of macro ‘STRNCATF’
+   34 |         snprintf( _tmp, sizeof _tmp, fmt, data );   \
+      |                                      ^~~
+src/third_party/libdisasm/x86_format.c:796:48: note: format string is defined here
+  796 |                         STRNCATF( buf, "type=\"%s\" ", str, len );
+      |                                                ^~
+src/third_party/libdisasm/x86_format.c:34:9: note: ‘snprintf’ output between 9 and 40 bytes into a destination of size 32
+   34 |         snprintf( _tmp, sizeof _tmp, fmt, data );   \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/third_party/libdisasm/x86_format.c:796:25: note: in expansion of macro ‘STRNCATF’
+  796 |                         STRNCATF( buf, "type=\"%s\" ", str, len );
+      |                         ^~~~~~~~
+src/third_party/libdisasm/x86_format.c: In function ‘format_operand_raw’:
+src/third_party/libdisasm/x86_format.c:909:40: warning: ‘%s’ directive output may be truncated writing up to 63 bytes into a region of size 32 [-Wformat-truncation=]
+  909 |                         STRNCATF( buf, "%s|", str, len );
+      |                                        ^~~~~  ~~~
+src/third_party/libdisasm/x86_format.c:34:38: note: in definition of macro ‘STRNCATF’
+   34 |         snprintf( _tmp, sizeof _tmp, fmt, data );   \
+      |                                      ^~~
+src/third_party/libdisasm/x86_format.c:909:41: note: format string is defined here
+  909 |                         STRNCATF( buf, "%s|", str, len );
+      |                                         ^~
+src/third_party/libdisasm/x86_format.c:34:9: note: ‘snprintf’ output between 2 and 65 bytes into a destination of size 32
+   34 |         snprintf( _tmp, sizeof _tmp, fmt, data );   \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/third_party/libdisasm/x86_format.c:909:25: note: in expansion of macro ‘STRNCATF’
+  909 |                         STRNCATF( buf, "%s|", str, len );
+      |                         ^~~~~~~~
+src/third_party/libdisasm/x86_format.c:899:40: warning: ‘%s’ directive output may be truncated writing up to 63 bytes into a region of size 32 [-Wformat-truncation=]
+  899 |                         STRNCATF( buf, "%s:", str, len );
+      |                                        ^~~~~  ~~~
+src/third_party/libdisasm/x86_format.c:34:38: note: in definition of macro ‘STRNCATF’
+   34 |         snprintf( _tmp, sizeof _tmp, fmt, data );   \
+      |                                      ^~~
+src/third_party/libdisasm/x86_format.c:899:41: note: format string is defined here
+  899 |                         STRNCATF( buf, "%s:", str, len );
+      |                                         ^~
+src/third_party/libdisasm/x86_format.c:34:9: note: ‘snprintf’ output between 2 and 65 bytes into a destination of size 32
+   34 |         snprintf( _tmp, sizeof _tmp, fmt, data );   \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/third_party/libdisasm/x86_format.c:899:25: note: in expansion of macro ‘STRNCATF’
+  899 |                         STRNCATF( buf, "%s:", str, len );
+      |                         ^~~~~~~~
+src/third_party/libdisasm/x86_format.c: In function ‘format_insn_note’:
+src/third_party/libdisasm/x86_format.c:1108:24: warning: ‘snprintf’ output may be truncated before the last format character [-Wformat-truncation=]
+ 1108 |         STRNCATF( buf, "%s|", note, len );
+      |                        ^~~~~
+src/third_party/libdisasm/x86_format.c:34:38: note: in definition of macro ‘STRNCATF’
+   34 |         snprintf( _tmp, sizeof _tmp, fmt, data );   \
+      |                                      ^~~
+src/third_party/libdisasm/x86_format.c:1108:28: note: format string is defined here
+ 1108 |         STRNCATF( buf, "%s|", note, len );
+      |                            ^
+src/third_party/libdisasm/x86_format.c:34:9: note: ‘snprintf’ output between 2 and 33 bytes into a destination of size 32
+   34 |         snprintf( _tmp, sizeof _tmp, fmt, data );   \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/third_party/libdisasm/x86_format.c:1108:9: note: in expansion of macro ‘STRNCATF’
+ 1108 |         STRNCATF( buf, "%s|", note, len );
+      |         ^~~~~~~~
+src/third_party/libdisasm/x86_format.c: In function ‘format_raw_insn’:
+src/third_party/libdisasm/x86_format.c:1141:24: warning: ‘|’ directive output may be truncated writing 1 byte into a region of size between 0 and 31 [-Wformat-truncation=]
+ 1141 |         STRNCATF( buf, "|%s|", insn->prefix_string             , len );
+      |                        ^~~~~~
+src/third_party/libdisasm/x86_format.c:34:38: note: in definition of macro ‘STRNCATF’
+   34 |         snprintf( _tmp, sizeof _tmp, fmt, data );   \
+      |                                      ^~~
+src/third_party/libdisasm/x86_format.c:1141:28: note: format string is defined here
+ 1141 |         STRNCATF( buf, "|%s|", insn->prefix_string             , len );
+      |                            ^
+src/third_party/libdisasm/x86_format.c:34:9: note: ‘snprintf’ output between 3 and 34 bytes into a destination of size 32
+   34 |         snprintf( _tmp, sizeof _tmp, fmt, data );   \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/third_party/libdisasm/x86_format.c:1141:9: note: in expansion of macro ‘STRNCATF’
+ 1141 |         STRNCATF( buf, "|%s|", insn->prefix_string             , len );
+      |         ^~~~~~~~
+src/third_party/libdisasm/x86_format.c: In function ‘format_xml_insn’:
+src/third_party/libdisasm/x86_format.c:1181:24: warning: ‘%s’ directive output may be truncated writing up to 31 bytes into a region of size 22 [-Wformat-truncation=]
+ 1181 |         STRNCATF( buf, "\" string=\"%s\"/>\n", insn->prefix_string, len );
+      |                        ^~~~~~~~~~~~~~~~~~~~~~
+src/third_party/libdisasm/x86_format.c:34:38: note: in definition of macro ‘STRNCATF’
+   34 |         snprintf( _tmp, sizeof _tmp, fmt, data );   \
+      |                                      ^~~
+src/third_party/libdisasm/x86_format.c:1181:37: note: format string is defined here
+ 1181 |         STRNCATF( buf, "\" string=\"%s\"/>\n", insn->prefix_string, len );
+      |                                     ^~
+src/third_party/libdisasm/x86_format.c:34:9: note: ‘snprintf’ output between 15 and 46 bytes into a destination of size 32
+   34 |         snprintf( _tmp, sizeof _tmp, fmt, data );   \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/third_party/libdisasm/x86_format.c:1181:9: note: in expansion of macro ‘STRNCATF’
+ 1181 |         STRNCATF( buf, "\" string=\"%s\"/>\n", insn->prefix_string, len );
+      |         ^~~~~~~~
+src/third_party/libdisasm/x86_format.c: In function ‘x86_format_insn’:
+src/third_party/libdisasm/x86_format.c:1410:33: warning: ‘snprintf’ output may be truncated before the last format character [-Wformat-truncation=]
+ 1410 |                  STRNCATF( buf, "%s\t", str, len );
+      |                                 ^~~~~~
+src/third_party/libdisasm/x86_format.c:34:38: note: in definition of macro ‘STRNCATF’
+   34 |         snprintf( _tmp, sizeof _tmp, fmt, data );   \
+      |                                      ^~~
+src/third_party/libdisasm/x86_format.c:1410:38: note: format string is defined here
+ 1410 |                  STRNCATF( buf, "%s\t", str, len );
+      |                                      ^
+src/third_party/libdisasm/x86_format.c:34:9: note: ‘snprintf’ output between 2 and 33 bytes into a destination of size 32
+   34 |         snprintf( _tmp, sizeof _tmp, fmt, data );   \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/third_party/libdisasm/x86_format.c:1410:18: note: in expansion of macro ‘STRNCATF’
+ 1410 |                  STRNCATF( buf, "%s\t", str, len );
+      |                  ^~~~~~~~
+src/third_party/libdisasm/x86_format.c:1417:33: warning: ‘snprintf’ output may be truncated before the last format character [-Wformat-truncation=]
+ 1417 |                  STRNCATF( buf, "%s\t", str, len );
+      |                                 ^~~~~~
+src/third_party/libdisasm/x86_format.c:34:38: note: in definition of macro ‘STRNCATF’
+   34 |         snprintf( _tmp, sizeof _tmp, fmt, data );   \
+      |                                      ^~~
+src/third_party/libdisasm/x86_format.c:1417:38: note: format string is defined here
+ 1417 |                  STRNCATF( buf, "%s\t", str, len );
+      |                                      ^
+src/third_party/libdisasm/x86_format.c:34:9: note: ‘snprintf’ output between 2 and 33 bytes into a destination of size 32
+   34 |         snprintf( _tmp, sizeof _tmp, fmt, data );   \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/third_party/libdisasm/x86_format.c:1417:18: note: in expansion of macro ‘STRNCATF’
+ 1417 |                  STRNCATF( buf, "%s\t", str, len );
+      |                  ^~~~~~~~
+src/third_party/libdisasm/x86_format.c:1342:32: warning: ‘snprintf’ output may be truncated before the last format character [-Wformat-truncation=]
+ 1342 |                 STRNCATF( buf, "%s\t", str, len);
+      |                                ^~~~~~
+src/third_party/libdisasm/x86_format.c:34:38: note: in definition of macro ‘STRNCATF’
+   34 |         snprintf( _tmp, sizeof _tmp, fmt, data );   \
+      |                                      ^~~
+src/third_party/libdisasm/x86_format.c:1342:37: note: format string is defined here
+ 1342 |                 STRNCATF( buf, "%s\t", str, len);
+      |                                     ^
+src/third_party/libdisasm/x86_format.c:34:9: note: ‘snprintf’ output between 2 and 33 bytes into a destination of size 32
+   34 |         snprintf( _tmp, sizeof _tmp, fmt, data );   \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/third_party/libdisasm/x86_format.c:1342:17: note: in expansion of macro ‘STRNCATF’
+ 1342 |                 STRNCATF( buf, "%s\t", str, len);
+      |                 ^~~~~~~~
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
